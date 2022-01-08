@@ -35,10 +35,9 @@ namespace BookCenter.Services
             {
                 if (item.Code.ToUpper() == value.ToUpper())
                 {
-
+                    Books.Remove(item);
                 }
             }
-            Books.Remove()
         }
     }
 }

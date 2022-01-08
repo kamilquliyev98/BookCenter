@@ -1,0 +1,5 @@
+C:\Users\Kamil\source\repos\BookCenter\BookCenter\obj\Debug\netcoreapp3.1\BookCenter.csproj.AssemblyReference.cache
+C:\Users\Kamil\source\repos\BookCenter\BookCenter\obj\Debug\netcoreapp3.1\BookCenter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kamil\source\repos\BookCenter\BookCenter\obj\Debug\netcoreapp3.1\BookCenter.AssemblyInfoInputs.cache
+C:\Users\Kamil\source\repos\BookCenter\BookCenter\obj\Debug\netcoreapp3.1\BookCenter.AssemblyInfo.cs
+C:\Users\Kamil\source\repos\BookCenter\BookCenter\obj\Debug\netcoreapp3.1\BookCenter.csproj.CoreCompileInputs.cache
