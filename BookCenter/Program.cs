@@ -132,6 +132,7 @@ namespace BookCenter
                 return;
             }
 
+            Console.WriteLine("Butun kitablarin siyahisi:");
             Console.WriteLine("------------------------------------------");
             foreach (Book book in lib.Books)
             {
@@ -139,7 +140,7 @@ namespace BookCenter
                 Console.WriteLine("------------------------------------------");
             }
 
-            Console.WriteLine("Silmek istediyiniz kitabin nomresini daxil edin:");
+            Console.WriteLine("\nSilmek istediyiniz kitabin nomresini daxil edin:");
         reEnterBookNo:
             string bookNo = Console.ReadLine();
             if (String.IsNullOrWhiteSpace(bookNo) || bookNo.Length < 3)
@@ -160,7 +161,7 @@ namespace BookCenter
             }
 
             Console.WriteLine("Butun kitablarin siyahisi:\n");
-            
+
             lib.ShowAllBooks();
         } // done
 
@@ -249,7 +250,16 @@ namespace BookCenter
                 goto reEnterBookName;
             }
 
+            Console.Clear();
             List<Book> Books = new List<Book>(lib.Books.FindAll(n => n.Name.ToUpper().Contains(bookName.ToUpper())));
+
+            if (Books.Count <= 0)
+            {
+                Console.WriteLine("Daxil etdiyiniz deyer bazada olan hec bir kitab adi ile uygun gelmedi...\n");
+                return;
+            }
+
+            Console.WriteLine("Kitablarin siyahisi:");
             Console.WriteLine("------------------------------------------");
             foreach (Book item in Books)
             {
@@ -268,7 +278,15 @@ namespace BookCenter
                 return;
             }
 
-            Console.WriteLine("Silmek istediyiniz kitabin adini daxil edin:");
+            Console.WriteLine("Butun kitablarin siyahisi:");
+            Console.WriteLine("------------------------------------------");
+            foreach (Book book in lib.Books)
+            {
+                Console.WriteLine(book);
+                Console.WriteLine("------------------------------------------");
+            }
+
+            Console.WriteLine("\nSilmek istediyiniz kitabin adini daxil edin:");
         reEnterBookName:
             Console.Write("=> ");
             string bookName = Console.ReadLine();
@@ -278,8 +296,17 @@ namespace BookCenter
                 goto reEnterBookName;
             }
 
+            int counter = 0;
+            foreach (Book book in lib.Books)
+            {
+                if (book.Name.ToUpper().Contains(bookName.ToUpper()))
+                {
+                    counter++;
+                }
+            }
+
             Console.Clear();
-            Console.WriteLine("Kitab silindi...\n");
+            Console.WriteLine($"Daxil etdiyiniz \"{bookName}\" deyerine uygun {counter} kitab tapildi ve her biri bazadan silindi...\n");
 
             lib.RemoveAllBooksByName(bookName);
         } // done
