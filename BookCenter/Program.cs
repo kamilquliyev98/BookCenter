@@ -105,7 +105,6 @@ namespace BookCenter
             }
 
             Console.Clear();
-            Console.WriteLine($"{minPage} ve {maxPage} araligi sehife sayi olan kitablar:");
             List<Book> Books = new List<Book>(lib.Books.FindAll(n => n.PageCount >= minPage && n.PageCount <= maxPage));
 
             if (Books.Count <= 0)
@@ -114,6 +113,7 @@ namespace BookCenter
                 return;
             }
 
+            Console.WriteLine($"{minPage} ve {maxPage} araligi sehife sayi olan kitablar:");
             Console.WriteLine("------------------------------------------");
             foreach (Book item in Books)
             {
