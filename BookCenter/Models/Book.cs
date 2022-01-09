@@ -21,5 +21,10 @@ namespace BookCenter.Models
             PageCount = pageCount;
             Code = name.ToUpper().Substring(0, 2) + _counter;
         }
+
+        public override string ToString()
+        {
+            return $"Kitab adi: {Name}\nMuellif adi: {AuthorName}\nSehife sayi: {PageCount}\nKitab nomresi: {Code}";
+        }
     }
 }

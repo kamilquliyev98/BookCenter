@@ -1,13 +1,27 @@
 ﻿using BookCenter.Models;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace BookCenter.Services
 {
     class Library
     {
-        public List<Book> Books { get; set; }
+        public List<Book> Books = new List<Book>(0);
+
+        public void AddBook(string name, string authorName, int pageCount)
+        {
+            Books.Add(new Book(name,authorName,pageCount));
+        }
+
+        public void ShowAllBooks()
+        {
+            Console.WriteLine("------------------------------------------");
+            foreach (Book book in Books)
+            {
+                Console.WriteLine(book);
+                Console.WriteLine("------------------------------------------");
+            }
+        }
 
         public List<Book> FindAllBooksByName(string value)
         {
@@ -31,13 +45,24 @@ namespace BookCenter.Services
 
         public void RemoveByNo(string value)
         {
+            Console.Clear();
+            bool find = true;
+
             foreach (Book item in Books)
             {
                 if (item.Code.ToUpper() == value.ToUpper())
                 {
                     Books.Remove(item);
+                    find = false;
+                    Console.WriteLine($"{item.Code} nomreli kitab silindi...");
+                    break;
                 }
             }
-        }
+
+            if (find)
+            {
+                Console.WriteLine("Daxil etdiyiniz nomrede kitab yoxdur...\n");
+            }
+        } // done
     }
 }

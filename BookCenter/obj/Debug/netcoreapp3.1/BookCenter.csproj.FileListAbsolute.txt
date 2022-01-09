@@ -3,3 +3,12 @@ C:\Users\Kamil\source\repos\BookCenter\BookCenter\obj\Debug\netcoreapp3.1\BookCe
 C:\Users\Kamil\source\repos\BookCenter\BookCenter\obj\Debug\netcoreapp3.1\BookCenter.AssemblyInfoInputs.cache
 C:\Users\Kamil\source\repos\BookCenter\BookCenter\obj\Debug\netcoreapp3.1\BookCenter.AssemblyInfo.cs
 C:\Users\Kamil\source\repos\BookCenter\BookCenter\obj\Debug\netcoreapp3.1\BookCenter.csproj.CoreCompileInputs.cache
+C:\Users\Kamil\source\repos\BookCenter\BookCenter\bin\Debug\netcoreapp3.1\BookCenter.exe
+C:\Users\Kamil\source\repos\BookCenter\BookCenter\bin\Debug\netcoreapp3.1\BookCenter.deps.json
+C:\Users\Kamil\source\repos\BookCenter\BookCenter\bin\Debug\netcoreapp3.1\BookCenter.runtimeconfig.json
+C:\Users\Kamil\source\repos\BookCenter\BookCenter\bin\Debug\netcoreapp3.1\BookCenter.runtimeconfig.dev.json
+C:\Users\Kamil\source\repos\BookCenter\BookCenter\bin\Debug\netcoreapp3.1\BookCenter.dll
+C:\Users\Kamil\source\repos\BookCenter\BookCenter\bin\Debug\netcoreapp3.1\BookCenter.pdb
+C:\Users\Kamil\source\repos\BookCenter\BookCenter\obj\Debug\netcoreapp3.1\BookCenter.dll
+C:\Users\Kamil\source\repos\BookCenter\BookCenter\obj\Debug\netcoreapp3.1\BookCenter.pdb
+C:\Users\Kamil\source\repos\BookCenter\BookCenter\obj\Debug\netcoreapp3.1\BookCenter.genruntimeconfig.cache
